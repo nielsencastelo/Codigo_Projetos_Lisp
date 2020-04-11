@@ -1,0 +1,6 @@
+(setq l (list 4 3 5 6 2))
+(dotimes (i 5)
+	(if (> (nth i l) (nth (+ i 1) l))  
+		(princ (nth i l))
+	)
+)

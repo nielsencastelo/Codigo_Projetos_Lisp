@@ -1,0 +1,11 @@
+( defun cart(x y)
+	(setq W (make-list (* (list-length x) (list-length y) : initial-element 0))
+	(setf pos 0)
+	(dotimes (i (list-length x))
+		(dotimes (j (list-length y))
+			(setf (nth pos W) (list (nth i x) (nth j y)))
+			(setf pos (1+ pos))
+		)
+	)
+	W
+)

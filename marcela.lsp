@@ -1,0 +1,12 @@
+(defun balistica ()
+	(print "Entre com o valor da velocidade, em m/s:")
+	(setf vel (read))
+	(print "Entre com o angulo, em graus:")
+	(setf ang (read))
+	(setf rad (* ang (/ pi 180)))
+	
+		(print "Velocidade em x:")
+		(* vel (cos rad))
+		(print "Velocidade em y:")
+		(* vel (sin rad))
+)

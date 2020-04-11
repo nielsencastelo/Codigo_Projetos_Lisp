@@ -1,0 +1,5 @@
+(dolist (x '(1 2 3)) (print x))
+(dolist (x (list 1 2 3)) (print x))
+(dolist (x '(1 2 3) 'opcional) (print x))
+(dolist (x (list 1 2 3) 50) (print x))
+(dolist (x (list 1 2 3) (list 10 9 8)) (print x))

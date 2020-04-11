@@ -1,0 +1,12 @@
+(defun fibo()
+
+	(print "Digite um número da série")
+	(setf n (read))
+	(setf x 1 xaux 0 xold 0)
+	(dotimes (i n 'fim)
+		(print x)
+		(setf xaux x)
+		(setf x (+ xaux xold))
+		(setf xold xaux)
+	)
+)

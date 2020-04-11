@@ -1,0 +1,18 @@
+(defun vertical (valor ang)
+(setf r1 (* ang  0.01745))
+(print "Componente vertical:")
+(print (* valor (sin r1)))
+)
+(defun horiz (valor ang)
+(setf r2 (* ang  0.01745))
+(print "Componente horizontal:")
+(print (* valor (cos r2)))
+)
+(print "Digite o valor nominal da velocidade")
+(setf vel (read))
+
+(print "Digite o valor do ângulo")
+(setf angl (read))
+
+(vertical vel angl)
+(horiz vel angl)
